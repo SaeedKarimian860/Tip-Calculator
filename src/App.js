@@ -4,7 +4,15 @@ export default function App() {
   return (
     <div className="App">
       <TipCalculator />
+    </div>
+  );
+}
+
+function TipCalculator() {
+  return (
+    <div>
       <Payment />
+      <Tip />
       <Tip />
       <Output />
       <Reset />
@@ -12,17 +20,11 @@ export default function App() {
   );
 }
 
-function TipCalculator() {}
-
 function Payment() {
   return (
     <div className="Payment">
-      <p>
-        How much was the bill?
-        <span>
-          <input type="text" />
-        </span>
-      </p>
+      <label>How much was the bill?</label>
+      <input type="text" placeholder="Bill value" />
     </div>
   );
 }
