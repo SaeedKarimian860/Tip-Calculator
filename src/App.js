@@ -3,11 +3,16 @@ import { useState } from "react";
 export default function App() {
   return (
     <div className="App">
+      <TipCalculator />
       <Payment />
-      <Tip1 />
+      <Tip />
+      <Output />
+      <Reset />
     </div>
   );
 }
+
+function TipCalculator() {}
 
 function Payment() {
   return (
@@ -22,7 +27,7 @@ function Payment() {
   );
 }
 
-function Tip1() {
+function Tip() {
   return (
     <div className="Tip1">
       <p>
@@ -38,3 +43,7 @@ function Tip1() {
     </div>
   );
 }
+
+function Output() {}
+
+function Reset() {}
