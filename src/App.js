@@ -43,6 +43,14 @@ function Tip({children}) {
   );
 }
 
-function Output() {}
+function Output() {
+    return (
+        <h3>You pay X ($A + $B tip</h3>;
+    )
+}
 
-function Reset() {}
+function Reset() {
+    return (
+        <button>Reset</button>
+    )
+}
