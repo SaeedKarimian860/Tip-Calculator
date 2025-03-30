@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Payment />
+      <Tip1 />
     </div>
   );
 }
 
-export default App;
+function Payment() {
+  return (
+    <div className="Payment">
+      <p>
+        How much was the bill?
+        <span>
+          <input type="text" />
+        </span>
+      </p>
+    </div>
+  );
+}
+
+function Tip1() {
+  return (
+    <div className="Tip1">
+      <p>
+        How did you like the service?
+        <span>
+          <select>
+            <option value="10%">It was good (10%)</option>
+            <option value="20%">It was great (20%)</option>
+            <option value="30%">It was amazing (30%)</option>
+          </select>
+        </span>
+      </p>
+    </div>
+  );
+}
